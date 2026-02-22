@@ -58,9 +58,14 @@ export function Header() {
 
   return (
     <header className="fixed shadow top-0 z-50 w-full border-b bg-background">
-      <div className="container flex h-20 items-center justify-between pl-5">
-        <Link href="/" className="flex items-center">
-          <span className="text-xl font-bold text-black">
+      <div className="container flex h-24 items-center justify-between pl-5">
+        <Link href="/" className="flex items-center gap-3">
+          <img 
+            src="/logSansBackGround.png" 
+            alt="Logo Cabinet Dentaire Echetouani" 
+            className="w-20 h-20 object-contain"
+          />
+          <span className="text-xl font-pacifico text-primary">
             Cabinet Dentaire Echetouani
           </span>
         </Link>

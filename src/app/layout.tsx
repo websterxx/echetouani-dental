@@ -40,7 +40,7 @@ export default function RootLayout({
         )}
       >
         <Header />
-        <main className="flex-grow pt-16">{children}</main>
+        <main className="flex-grow pt-24">{children}</main>
         <Footer />
         <Toaster />
         <ScrollToTop />

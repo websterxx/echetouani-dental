@@ -8,7 +8,7 @@ export function ServicesPreview() {
   const featuredServices = services.slice(0, 3);
 
   return (
-    <section id="services" className="py-16 sm:py-24 bg-gradient-to-b from-background to-secondary">
+    <section id="services" className="py-16 sm:py-24">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">Nos Services</h2>
@@ -32,7 +32,7 @@ export function ServicesPreview() {
           ))}
         </div>
         <div className="text-center mt-12">
-          <Button asChild size="lg">
+          <Button asChild size="lg" className="font-semibold">
             <Link href="/services">
               Voir tous les services <ArrowRight className="ml-2 h-4 w-4" />
             </Link>

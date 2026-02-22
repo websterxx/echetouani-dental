@@ -12,12 +12,12 @@ const quickLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-secondary text-secondary-foreground border-t">
+    <footer className="bg-secondary border-t">
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <span className="font-semibold font-headline">Cabinet Dentaire Echetouani</span>
-            <p className="text-sm text-muted-foreground pt-4">
+            <p className="text-sm pt-4">
               Un sourire sain commence ici.
             </p>
           </div>
@@ -45,12 +45,17 @@ export function Footer() {
           </div>
           <div className="md:col-span-1">
             <h3 className="font-semibold mb-4 font-headline">Horaires d'Ouverture</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <ul className="space-y-2 text-sm">
               <li>Lundi - Vendredi : 9h00 - 18h00</li>
             </ul>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
+
+        <div className="mt-12">
+          <div className="border-t border-gray-300"></div>
+        </div>
+
+        <div className="mt-8 text-center text-sm">
           <p>&copy; {new Date().getFullYear()} Cabinet Dentaire Marouane & Ahmed Echetouani. Tous droits réservés.</p>
         </div>
       </div>

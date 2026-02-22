@@ -4,7 +4,7 @@ import { AppointmentButton } from '../layout/AppointmentButton';
 
 export function ContactMap() {
   return (
-    <section id="contact" className="py-16 sm:py-24 bg-gradient-to-b from-secondary to-background">
+    <section id="contact" className="py-16 sm:py-24">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">Contactez-nous</h2>

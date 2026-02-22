@@ -19,6 +19,7 @@ export default {
     },
     extend: {
       fontFamily: {
+        pacifico: ['Pacifico', 'cursive'],
         body: ['PT Sans', 'sans-serif'],
         headline: ['PT Sans', 'sans-serif'],
         code: ['monospace'],

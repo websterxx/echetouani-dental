@@ -53,7 +53,7 @@ export function Testimonials() {
   return (
     <section 
       id="testimonials" 
-      className="py-16 sm:py-24 bg-gradient-to-b from-background to-secondary"
+      className="py-16 sm:py-24"
     >
       <div className="container">
         <div className="text-center mb-12">

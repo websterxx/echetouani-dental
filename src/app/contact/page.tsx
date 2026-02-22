@@ -161,7 +161,7 @@ export default function ContactPage() {
               <Form {...form}>
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col h-full">
                   <div className="flex-grow space-y-6">
-                    <p className="text-sm text-muted-foreground">Les champs avec un <span className="text-destructive">*</span> sont obligatoires.</p>
+                    <p className="text-sm">Les champs avec un <span className="text-destructive">*</span> sont obligatoires.</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <FormField
                         control={control}
@@ -278,7 +278,7 @@ export default function ContactPage() {
                               {...field}
                             />
                           </FormControl>
-                          <p className="text-sm text-muted-foreground">(Entre 10 et 500 caractères)</p>
+                          <p className="text-sm">(Entre 10 et 500 caractères)</p>
                           <FormMessage />
                         </FormItem>
                       )}
@@ -290,7 +290,7 @@ export default function ContactPage() {
                       rules={{ required: "Veuillez sélectionner une méthode de contact." }}
                       render={({ field }) => (
                         <FormItem className="space-y-3">
-                          <FormLabel>Comment préférez-vous être contacté ? <span className="text-destructive">*</span></FormLabel>
+                          <FormLabel>Préférez-vous être recontacté par : <span className="text-destructive">*</span></FormLabel>
                           <FormControl>
                             <RadioGroup
                               onValueChange={field.onChange}
