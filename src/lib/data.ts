@@ -68,7 +68,8 @@ export const doctors = [
     bio: 'Le Dr. Marouane est un dentiste compatissant et hautement qualifié avec plus de 15 ans d`expérience en dentisterie esthétique et restauratrice. Il se consacre à fournir des soins personnalisés et à créer de beaux sourires sains pour ses patients.',
     image: '/MarouaneImage.png',
     dataAiHint: 'professional dentist man',
-    email: 'ismailkadiri3@gmail.com'
+    email: 'ismailkadiri3@gmail.com',
+    doctolibUrl: 'https://www.doctolib.fr/dentiste/chateau-thierry/marouane-echetouani'
   },
   {
     firstName: 'Ahmed',
@@ -76,7 +77,8 @@ export const doctors = [
     bio: 'Le Dr. Ahmed est spécialisé en orthodontie et en dentisterie pédiatrique. Avec une approche douce et une passion pour la création d`expériences dentaires positives, il aide les patients de tous âges à obtenir le sourire dont ils ont toujours rêvé.',
     image: '/AhmedImage.png',
     dataAiHint: 'professional dentist portrait',
-    email: 'ismailkadiri31@gmail.com'
+    email: 'ismailkadiri31@gmail.com',
+    doctolibUrl: 'https://www.doctolib.fr/dentiste/chateau-thierry/ahmed-echetouani'
   },  
   {
     firstName: 'Mélanie',
@@ -84,7 +86,8 @@ export const doctors = [
     bio: 'Le Dr. Mélanie est spécialisé en orthodontie et en dentisterie pédiatrique. Avec une approche douce et une passion pour la création d`expériences dentaires positives, il aide les patients de tous âges à obtenir le sourire dont ils ont toujours rêvé.',
     image: '/MelanieImage.png',
     dataAiHint: 'professional dentist portrait',
-    email: 'ismailkadiri32@gmail.com'
+    email: 'ismailkadiri32@gmail.com',
+    doctolibUrl: 'https://www.doctolib.fr/dentiste/vincennes/melanie-charron'
   }
 ];
 
