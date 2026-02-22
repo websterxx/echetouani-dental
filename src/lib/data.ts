@@ -76,8 +76,16 @@ export const doctors = [
     bio: 'Le Dr. Ahmed est spécialisé en orthodontie et en dentisterie pédiatrique. Avec une approche douce et une passion pour la création d`expériences dentaires positives, il aide les patients de tous âges à obtenir le sourire dont ils ont toujours rêvé.',
     image: '/AhmedImage.png',
     dataAiHint: 'professional dentist portrait',
-    email: 'ismailkadiri@gmail.com'
-  },
+    email: 'ismailkadiri31@gmail.com'
+  },  
+  {
+    firstName: 'Mélanie',
+    lastName: 'Charon',
+    bio: 'Le Dr. Mélanie est spécialisé en orthodontie et en dentisterie pédiatrique. Avec une approche douce et une passion pour la création d`expériences dentaires positives, il aide les patients de tous âges à obtenir le sourire dont ils ont toujours rêvé.',
+    image: '/MelanieImage.png',
+    dataAiHint: 'professional dentist portrait',
+    email: 'ismailkadiri32@gmail.com'
+  }
 ];
 
 export const values = [

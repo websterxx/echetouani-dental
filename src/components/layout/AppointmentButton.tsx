@@ -30,6 +30,11 @@ export function AppointmentButton({ className }: { className?: string }) {
               Dr. Ahmed Echetouani
             </a>
           </Button>
+          <Button asChild>
+            <a href="https://www.doctolib.fr/dentiste/vincennes/melanie-charron" target="_blank" rel="noopener noreferrer">
+              Dr. Mélanie Charron
+            </a>
+          </Button>
         </div>
       </DialogContent>
     </Dialog>
