@@ -19,7 +19,7 @@ export function AppointmentButton({ className }: { className?: string }) {
 
       <DialogContent>
         <DialogHeader>
-          <DialogTitle className="text-black dark:text-white">
+          <DialogTitle className="text-black">
             Prendre un rendez-vous
           </DialogTitle>
         </DialogHeader>

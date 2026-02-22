@@ -1,11 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { Menu, Sun, Moon } from 'lucide-react';
-import { useTheme } from 'next-themes';
+import { Menu } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -29,13 +27,10 @@ const navLinks = [
 
 export function Header() {
   const pathname = usePathname();
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
@@ -43,10 +38,6 @@ export function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  };
 
   const NavLink = ({ href, label }: { href: string; label: string }) => {
     const isLinkActive = pathname === href;
@@ -69,7 +60,9 @@ export function Header() {
     <header className="fixed shadow top-0 z-50 w-full border-b bg-background">
       <div className="container flex h-20 items-center justify-between pl-5">
         <Link href="/" className="flex items-center">
-          {mounted && <span className="text-xl font-bold text-black dark:text-white">Cabinet Dentaire Echetouani</span>}
+          <span className="text-xl font-bold text-black">
+            Cabinet Dentaire Echetouani
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">
@@ -80,13 +73,7 @@ export function Header() {
 
         <div className="flex items-center gap-4">
           <AppointmentButton className="hidden lg:flex font-semibold" />
-          {mounted && (
-            <Button variant="outline" size="icon" onClick={toggleTheme}>
-              <Sun className="h-5 w-5 dark:hidden" />
-              <Moon className="h-5 w-5 hidden dark:block" />
-              <span className="sr-only">Changer de thème</span>
-            </Button>
-          )}
+
           <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
             <SheetTrigger asChild className="lg:hidden">
               <Button variant="outline" size="icon">
@@ -94,6 +81,7 @@ export function Header() {
                 <span className="sr-only">Ouvrir le menu</span>
               </Button>
             </SheetTrigger>
+
             <SheetContent side="left">
               <SheetHeader className="border-b pb-4">
                 <SheetTitle>Menu</SheetTitle>
@@ -101,14 +89,18 @@ export function Header() {
                   Naviguez sur le site du Cabinet Dentaire Echetouani.
                 </SheetDescription>
               </SheetHeader>
+
               <div className="flex flex-col gap-6 p-6">
                 <Link
                   href="/"
                   className="flex items-center"
                   onClick={() => setMenuOpen(false)}
                 >
-                  {mounted && <span className="font-bold text-black dark:text-white">Cabinet Dentaire Echetouani</span>}
+                  <span className="font-bold text-black">
+                    Cabinet Dentaire Echetouani
+                  </span>
                 </Link>
+
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
                     <Link
@@ -126,6 +118,7 @@ export function Header() {
                     </Link>
                   ))}
                 </nav>
+
                 <AppointmentButton className="font-semibold" />
               </div>
             </SheetContent>
