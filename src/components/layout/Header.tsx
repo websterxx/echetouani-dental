@@ -47,7 +47,7 @@ export function Header() {
         href={href}
         className={cn(
           'font-semibold hover:scale-105 transition-transform',
-          isLinkActive ? 'text-primary' : 'text-foreground/80'
+          isLinkActive ? 'text-primary' : 'text-foreground/80',
         )}
         onClick={() => setMenuOpen(false)}
       >
@@ -60,27 +60,25 @@ export function Header() {
     <header className="fixed shadow top-0 z-50 w-full border-b bg-background">
       <div className="container flex h-24 items-center justify-between pl-5">
         <Link href="/" className="flex items-center gap-3">
-          <img 
-            src="/logSansBackGround.png" 
-            alt="Logo Cabinet Dentaire Echetouani" 
+          <img
+            src="/logSansBackGround.png"
+            alt="Logo Cabinet Dentaire Echetouani"
             className="w-20 h-20 object-contain"
           />
-          <span className="text-xl font-pacifico text-primary">
-            Cabinet Dentaire Echetouani
-          </span>
+          <span className="text-xl font-pacifico text-primary">Cabinet Echetouani Charon</span>
         </Link>
 
-        <nav className="hidden items-center gap-6 lg:flex">
+        <nav className="hidden items-center gap-6 xl:flex">
           {navLinks.map((link) => (
             <NavLink key={link.href} href={link.href} label={link.label} />
           ))}
         </nav>
 
         <div className="flex items-center gap-4">
-          <AppointmentButton className="hidden lg:flex font-semibold" />
+          <AppointmentButton className="hidden xl:flex font-semibold" />
 
           <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
-            <SheetTrigger asChild className="lg:hidden">
+            <SheetTrigger asChild className="xl:hidden">
               <Button variant="outline" size="icon">
                 <Menu className="h-4 w-4" />
                 <span className="sr-only">Ouvrir le menu</span>
@@ -96,14 +94,8 @@ export function Header() {
               </SheetHeader>
 
               <div className="flex flex-col gap-6 p-6">
-                <Link
-                  href="/"
-                  className="flex items-center"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  <span className="font-bold text-black">
-                    Cabinet Dentaire Echetouani
-                  </span>
+                <Link href="/" className="flex items-center" onClick={() => setMenuOpen(false)}>
+                  <span className="font-bold text-black">Cabinet Dentaire Echetouani</span>
                 </Link>
 
                 <nav className="flex flex-col gap-4">
@@ -113,9 +105,7 @@ export function Header() {
                       href={link.href}
                       className={cn(
                         'text-lg font-medium',
-                        pathname === link.href
-                          ? 'text-primary'
-                          : 'text-muted-foreground'
+                        pathname === link.href ? 'text-primary' : 'text-muted-foreground',
                       )}
                       onClick={() => setMenuOpen(false)}
                     >
