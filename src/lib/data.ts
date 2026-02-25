@@ -8,6 +8,7 @@ import {
   ShieldCheck,
   HeartHandshake,
   Accessibility,
+  Layers,
 } from 'lucide-react';
 
 export type Service = {
@@ -32,23 +33,13 @@ export const services: Service[] = [
   },
   {
     icon: Smile,
-    title: 'Appareils & Orthodontie',
+    title: 'Traitement Parodontaux',
     description:
-      'Obtenez un sourire parfaitement aligné avec nos traitements orthodontiques modernes, y compris les appareils dentaires et les aligneurs transparents.',
+      'Protégez vos gencives et prévenez les maladies parodontales grâce à nos soins spécialisés et personnalisés.',
     longDescription:
-      "Un sourire droit n'est pas seulement une question d'esthétique, c'est aussi une question de santé. Nous proposons une variété de solutions orthodontiques pour les enfants et les adultes, y compris des appareils traditionnels et des aligneurs transparents quasi invisibles. Le Dr Ahmed Echetouani évaluera votre cas et vous recommandera le meilleur plan de traitement pour corriger l'alignement, améliorer votre occlusion et vous donner le sourire confiant que vous méritez les appareils dentaires et les aligneurs transparentsles appareils dentaires et les aligneurs transparentsles appareils dentaires et les aligneurs transparentsles appareils dentaires et les aligneurs transparentsles appareils dentaires et les aligneurs transparentsles appareils dentaires et les aligneurs transparentsles appareils dentaires et les aligneurs transparentsles appareils dentaires et les aligneurs transparentsles appareils dentaires et les aligneurs transparentsles appareils dentaires et les aligneurs transparentsles appareils dentaires et les aligneurs transparents.",
+      "Nos traitements parodontaux visent à prévenir et traiter les maladies des gencives, telles que la gingivite et la parodontite. Grâce à un diagnostic précis et à des techniques avancées de nettoyage sous-gingival, notre équipe aide à réduire l'inflammation, à stopper la perte osseuse et à préserver vos dents naturelles. Nous proposons également un suivi régulier et des conseils personnalisés pour maintenir des gencives saines à long terme.",
     image: 'https://placehold.co/600x400.png',
     imageHint: 'orthodontics braces',
-  },
-  {
-    icon: Anchor,
-    title: 'Implants Dentaires',
-    description:
-      'Restaurez votre sourire avec des implants dentaires durables et d`apparence naturelle, la référence pour les dents manquantes.',
-    longDescription:
-      "Les implants dentaires sont la solution la plus avancée et la plus durable pour remplacer les dents manquantes. Un petit tenon en titane est placé chirurgicalement dans l'os de la mâchoire, agissant comme une racine artificielle. Une fois guéri, il est surmonté d'une couronne sur mesure qui ressemble et fonctionne comme une dent naturelle. Les implants vous permettent de manger, de parler et de sourire en toute confiance, tout en préservant l'os de la mâchoire.",
-    image: 'https://placehold.co/600x400.png',
-    imageHint: 'dental implant model',
   },
   {
     icon: Sparkles,
@@ -61,6 +52,16 @@ export const services: Service[] = [
     imageHint: 'teeth whitening chart',
   },
   {
+    icon: Anchor,
+    title: 'Implants Dentaires',
+    description:
+      'Restaurez votre sourire avec des implants dentaires durables et d`apparence naturelle, la référence pour les dents manquantes.',
+    longDescription:
+      "Les implants dentaires sont la solution la plus avancée et la plus durable pour remplacer les dents manquantes. Un petit tenon en titane est placé chirurgicalement dans l'os de la mâchoire, agissant comme une racine artificielle. Une fois guéri, il est surmonté d'une couronne sur mesure qui ressemble et fonctionne comme une dent naturelle. Les implants vous permettent de manger, de parler et de sourire en toute confiance, tout en préservant l'os de la mâchoire.",
+    image: 'https://placehold.co/600x400.png',
+    imageHint: 'dental implant model',
+  },
+  {
     icon: ShieldCheck,
     title: 'Couronnes Dentaires',
     description:
@@ -71,12 +72,12 @@ export const services: Service[] = [
     imageHint: 'dental crown',
   },
   {
-    icon: HeartHandshake,
-    title: 'Dentisterie Pédiatrique',
+    icon: Layers,
+    title: 'Onlay Overlay',
     description:
-      'Des soins dentaires doux et amicaux pour les enfants afin d`assurer une vie de sourires sains.',
+      'Réparez et renforcez vos dents avec nos onlays et overlays sur mesure pour restaurer leur fonction et esthétique.',
     longDescription:
-      "Nous nous engageons à offrir une expérience dentaire positive à nos plus jeunes patients. Le Dr Ahmed Echetouani et notre équipe sont spécialement formés pour fournir des soins doux et préventifs aux enfants, des tout-petits aux adolescents. Nous nous concentrons sur l'éducation, la prévention des caries et la création d'un environnement amusant et sans stress pour jeter les bases d'une vie de bonne santé bucco-dentaire.",
+      'Les onlays et overlays sont des restaurations dentaires partielles utilisées pour réparer des dents endommagées ou affaiblies. Elles sont fabriquées sur mesure pour s’adapter parfaitement à la dent, en préservant le maximum de tissu dentaire sain. Ce traitement permet de restaurer la fonction masticatoire, d’améliorer l’esthétique et de prolonger la durée de vie des dents affectées, offrant une solution durable et naturelle.',
     image: 'https://placehold.co/600x400.png',
     imageHint: 'child dentist',
   },
