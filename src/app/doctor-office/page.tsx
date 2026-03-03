@@ -10,10 +10,12 @@ export const metadata = {
 };
 
 const officeImages = [
-  { src: '/cabinnet1.png', alt: 'Zone de réception', dataAiHint: 'dental reception' },
-  { src: '/cabinnet2.png', alt: 'Salle de traitement moderne', dataAiHint: 'dental chair' },
-  { src: '/cabinnet3.png', alt: "Salle d'attente confortable", dataAiHint: 'clinic waiting room' },
-  { src: '/cabinnet4.png', alt: 'Équipement dentaire de pointe', dataAiHint: 'dental equipment' },
+  { src: '/Cabinet1.png', alt: 'Salle de traitement moderne' },
+  { src: '/Cabinet2.png', alt: 'Salle de traitement moderne' },
+  { src: '/Cabinet3.png', alt: 'Salle de traitement moderne' },
+  { src: '/Cabinet4.png', alt: 'Salle de traitement moderne' },
+  { src: '/Cabinet5.png', alt: 'Salle de radiologie' },
+  { src: '/Cabinet6.png', alt: 'Salle de préparation' },
 ];
 
 export default function DoctorOfficePage() {
@@ -48,7 +50,9 @@ export default function DoctorOfficePage() {
                 <h2 className="text-3xl font-bold font-headline mb-4">
                   Dr. {doctor.firstName} {doctor.lastName}
                 </h2>
-                <p className="text-muted-foreground leading-relaxed">{doctor.bio}</p>
+                <p className="text-muted-foreground leading-relaxed mb-2">{doctor.bio1}</p>
+                <p className="text-muted-foreground leading-relaxed mb-2">{doctor.bio2}</p>
+                <p className="text-muted-foreground leading-relaxed">{doctor.bio3}</p>
               </div>
             </div>
           ))}
@@ -88,7 +92,6 @@ export default function DoctorOfficePage() {
                   width={500}
                   height={350}
                   className="w-full h-full object-cover aspect-video"
-                  data-ai-hint={image.dataAiHint}
                 />
               </Card>
             ))}

@@ -28,8 +28,8 @@ export const services: Service[] = [
       'Maintenez une santé bucco-dentaire optimale grâce à nos contrôles dentaires complets et à nos services de nettoyage.',
     longDescription:
       "Des examens réguliers sont la pierre angulaire de la santé dentaire. Nos contrôles complets comprennent un nettoyage professionnel pour éliminer la plaque et le tartre, un examen approfondi des dents et des gencives pour détecter les premiers signes de caries ou de maladies des gencives, et des radiographies si nécessaire. Nous vous fournissons également des conseils personnalisés sur l'hygiène bucco-dentaire afin que vous puissiez conserver un sourire éclatant et sain entre les visites.",
-    image: 'https://placehold.co/600x400.png',
-    imageHint: 'dental tools',
+    image: '/ControleGeneImg.png',
+    imageHint: 'general treatments',
   },
   {
     icon: Smile,
@@ -38,18 +38,18 @@ export const services: Service[] = [
       'Protégez vos gencives et prévenez les maladies parodontales grâce à nos soins spécialisés et personnalisés.',
     longDescription:
       "Nos traitements parodontaux visent à prévenir et traiter les maladies des gencives, telles que la gingivite et la parodontite. Grâce à un diagnostic précis et à des techniques avancées de nettoyage sous-gingival, notre équipe aide à réduire l'inflammation, à stopper la perte osseuse et à préserver vos dents naturelles. Nous proposons également un suivi régulier et des conseils personnalisés pour maintenir des gencives saines à long terme.",
-    image: 'https://placehold.co/600x400.png',
+    image: '/TraitementParaImg.png',
     imageHint: 'orthodontics braces',
   },
   {
-    icon: Sparkles,
-    title: 'Blanchiment des Dents',
+    icon: ShieldCheck,
+    title: 'Soins des Caries',
     description:
-      'Éclaircissez votre sourire avec nos services de blanchiment des dents professionnels pour un look éblouissant et confiant.',
+      'Traitez efficacement les caries et protégez vos dents grâce à des soins conservateurs modernes et indolores.',
     longDescription:
-      "Avec le temps, le café, le thé et d'autres aliments peuvent tacher vos dents. Notre traitement de blanchiment professionnel est un moyen sûr et efficace d'éliminer ces taches et d'éclaircir considérablement votre sourire. Nous proposons des options de blanchiment en cabinet pour des résultats immédiats ainsi que des kits à emporter pour un entretien pratique à domicile, vous aidant à obtenir un sourire visiblement plus blanc.",
-    image: 'https://placehold.co/600x400.png',
-    imageHint: 'teeth whitening chart',
+      'Les caries dentaires sont l’une des affections les plus courantes, mais elles peuvent être traitées efficacement lorsqu’elles sont détectées à temps. Le traitement de la carie consiste à retirer les tissus dentaires atteints puis à restaurer la dent afin de stopper l’évolution de la lésion et préserver la santé de la dent.',
+    image: '/CarieImg.png',
+    imageHint: 'dental filling procedure',
   },
   {
     icon: Anchor,
@@ -58,7 +58,7 @@ export const services: Service[] = [
       'Restaurez votre sourire avec des implants dentaires durables et d`apparence naturelle, la référence pour les dents manquantes.',
     longDescription:
       "Les implants dentaires sont la solution la plus avancée et la plus durable pour remplacer les dents manquantes. Un petit tenon en titane est placé chirurgicalement dans l'os de la mâchoire, agissant comme une racine artificielle. Une fois guéri, il est surmonté d'une couronne sur mesure qui ressemble et fonctionne comme une dent naturelle. Les implants vous permettent de manger, de parler et de sourire en toute confiance, tout en préservant l'os de la mâchoire.",
-    image: 'https://placehold.co/600x400.png',
+    image: '/ImplantImg.png',
     imageHint: 'dental implant model',
   },
   {
@@ -68,7 +68,7 @@ export const services: Service[] = [
       'Protégez et restaurez les dents endommagées avec nos couronnes dentaires de haute qualité, fabriquées sur mesure.',
     longDescription:
       "Une couronne dentaire est une coiffe sur mesure qui recouvre toute la dent, restaurant sa forme, sa taille, sa force et son apparence. Les couronnes sont idéales pour protéger une dent affaiblie par la carie, pour restaurer une dent déjà cassée ou pour recouvrir un implant dentaire. Nous utilisons des matériaux de haute qualité comme la porcelaine et la zircone pour créer des couronnes durables et d'apparence naturelle.",
-    image: 'https://placehold.co/600x400.png',
+    image: '/CouronneImg.png',
     imageHint: 'dental crown',
   },
   {
@@ -78,8 +78,8 @@ export const services: Service[] = [
       'Réparez et renforcez vos dents avec nos onlays et overlays sur mesure pour restaurer leur fonction et esthétique.',
     longDescription:
       'Les onlays et overlays sont des restaurations dentaires partielles utilisées pour réparer des dents endommagées ou affaiblies. Elles sont fabriquées sur mesure pour s’adapter parfaitement à la dent, en préservant le maximum de tissu dentaire sain. Ce traitement permet de restaurer la fonction masticatoire, d’améliorer l’esthétique et de prolonger la durée de vie des dents affectées, offrant une solution durable et naturelle.',
-    image: 'https://placehold.co/600x400.png',
-    imageHint: 'child dentist',
+    image: '/OnlayImg.png',
+    imageHint: 'Onlay Overlay',
   },
 ];
 
@@ -87,7 +87,9 @@ export const doctors = [
   {
     firstName: 'Marouane',
     lastName: 'Echetouani',
-    bio: 'Le Dr. Marouane est un dentiste compatissant et hautement qualifié avec plus de 15 ans d`expérience en dentisterie esthétique et restauratrice. Il se consacre à fournir des soins personnalisés et à créer de beaux sourires sains pour ses patients.',
+    bio1: 'Chirurgien-dentiste diplômé de la Faculté de Reims et titulaire d’un Diplôme Universitaire d’Implantologie de l’Université Paris XII, il exerce une activité omnipratique orientée vers la réhabilitation globale, notamment dans la prise en charge des pertes de dimension verticale et des usures dentaires.',
+    bio2: 'Son activité clinique couvre l’ensemble des soins dentaires, de la prévention aux traitements conservateurs, avec une expertise particulière en chirurgie orale. Il intervient aussi bien pour des actes d’extraction que pour des chirurgies endodontiques.',
+    bio3: 'Il pratique également l’implantologie, de la pose d’implants à la gestion des volumes osseux, incluant les greffes osseuses, ainsi que la chirurgie parodontale, dans une approche globale et personnalisée de la prise en charge de ses patients.',
     image: '/MarouaneImage.png',
     dataAiHint: 'professional dentist man',
     email: 'ismailkadiri3@gmail.com',
@@ -96,7 +98,9 @@ export const doctors = [
   {
     firstName: 'Ahmed',
     lastName: 'Echetouani',
-    bio: 'Le Dr. Ahmed est spécialisé en orthodontie et en dentisterie pédiatrique. Avec une approche douce et une passion pour la création d`expériences dentaires positives, il aide les patients de tous âges à obtenir le sourire dont ils ont toujours rêvé.',
+    bio1: 'Formé à la Faculté de Reims puis spécialisé en implantologie à travers un Diplôme Universitaire délivré à Troyes, il exerce une omnipratique moderne, avec une attention particulière portée aux prises en charge complexes nécessitant une réhabilitation globale.',
+    bio2: 'Il assure l’ensemble des soins dentaires au quotidien et réalise des actes de chirurgie orale allant de l’extraction aux traitements endodontiques chirurgicaux.',
+    bio3: 'Son activité comprend également la chirurgie implantaire, de la mise en place des implants aux techniques de greffes osseuses, ainsi que la chirurgie parodontale, afin de proposer des plans de traitement complets et personnalisés, adaptés à chaque patient.',
     image: '/AhmedImage.png',
     dataAiHint: 'professional dentist portrait',
     email: 'ismailkadiri31@gmail.com',
@@ -105,7 +109,9 @@ export const doctors = [
   {
     firstName: 'Mélanie',
     lastName: 'Charon',
-    bio: 'Le Dr. Mélanie est spécialisé en orthodontie et en dentisterie pédiatrique. Avec une approche douce et une passion pour la création d`expériences dentaires positives, il aide les patients de tous âges à obtenir le sourire dont ils ont toujours rêvé.',
+    bio1: 'Diplômée de la Faculté de Chirurgie Dentaire de Reims, elle exerce une activité omnipratique avec une orientation particulière vers les restaurations adhésives et les réhabilitations globales à visée esthétique.',
+    bio2: 'Son approche vise à restaurer durablement la fonction et l’harmonie du sourire, en tenant compte des attentes esthétiques de chaque patient.',
+    bio3: 'Elle prend également en charge les pathologies parodontales, tant dans le cadre des traitements d’assainissement parodontal que par la réalisation d’actes de chirurgie mucogingivale. Cette double approche lui permet de proposer des plans de traitement complets, alliant santé parodontale et exigence esthétique.',
     image: '/MelanieImage.png',
     dataAiHint: 'professional dentist portrait',
     email: 'ismailkadiri32@gmail.com',

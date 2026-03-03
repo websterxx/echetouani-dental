@@ -95,7 +95,7 @@ export function Header() {
 
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center" onClick={() => setMenuOpen(false)}>
-                  <span className="font-bold text-black">Cabinet Dentaire Echetouani</span>
+                  <span className="font-bold text-black">Cabinet Echetouani Charon</span>
                 </Link>
 
                 <nav className="flex flex-col gap-4">

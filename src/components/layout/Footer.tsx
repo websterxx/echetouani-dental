@@ -1,4 +1,3 @@
-
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -16,19 +15,15 @@ export function Footer() {
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
-            <span className="font-semibold font-headline">Cabinet Dentaire Echetouani</span>
-            <p className="text-sm pt-4">
-              Un sourire sain commence ici.
-            </p>
+            <span className="font-semibold font-headline">Cabinet Echetouani Charon</span>
+            <p className="text-sm pt-4">Un sourire sain commence ici.</p>
           </div>
           <div className="md:col-span-1">
             <h3 className="font-semibold mb-4 font-headline">Contact</h3>
             <ul className="space-y-2 text-sm">
-              <li>Adresse : 123 Avenue Dentaire, Paris, France</li>
-              <li>Téléphone : +33 1 23 45 67 89</li>
-              <li>Téléphone 2 : +33 9 87 65 43 21</li>
-              <li>Email : contact@echetouani-dental.com</li>
-              <li>Email 2 : secretariat@echetouani-dental.com</li>
+              <li>Adresse : 49 Bis Rue Carnot, 10100 Romilly-sur-Seine</li>
+              <li>Téléphone : 03 68 89 06 70</li>
+              <li>Email : Cabinetdentaireromilly@gmail.com</li>
             </ul>
           </div>
           <div className="md:col-span-1">
@@ -56,7 +51,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Cabinet Dentaire Marouane & Ahmed Echetouani. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} Cabinet Echetouani Charon. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
