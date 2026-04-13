@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useState } from 'react';
 import { services, type Service } from '@/lib/data';
@@ -26,9 +26,10 @@ export default function ServicesPage() {
     <div>
       <header className="bg-secondary py-16">
         <div className="container text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline">Nos Services Dentaires</h1>
+          <h1 className="text-5xl md:text-6xl font-bold font-nickainley">Nos Services Dentaires</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Des soins complets et spécialisés pour garder votre sourire sain et magnifique toute la vie.
+            Des soins complets et spécialisés pour garder votre sourire sain et magnifique toute la
+            vie.
           </p>
         </div>
       </header>
@@ -58,7 +59,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </main>
-      
+
       {selectedService && (
         <ServiceDetailModal
           isOpen={isModalOpen}

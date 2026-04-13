@@ -25,7 +25,7 @@ export const services: Service[] = [
     icon: Ambulance,
     title: 'Contrôles Généraux',
     description:
-      'Maintenez une santé bucco-dentaire optimale grâce à nos contrôles dentaires complets et à nos services de nettoyage.',
+      'Maintenez une santé bucco-dentaire optimale grâce à nos contrôles dentaires complets.',
     longDescription:
       "Des examens réguliers sont la pierre angulaire de la santé dentaire. Nos contrôles complets comprennent un nettoyage professionnel pour éliminer la plaque et le tartre, un examen approfondi des dents et des gencives pour détecter les premiers signes de caries ou de maladies des gencives, et des radiographies si nécessaire. Nous vous fournissons également des conseils personnalisés sur l'hygiène bucco-dentaire afin que vous puissiez conserver un sourire éclatant et sain entre les visites.",
     image: '/ControleGeneImg.png',
@@ -108,8 +108,8 @@ export const doctors = [
   },
   {
     firstName: 'Mélanie',
-    lastName: 'Charon',
-    bio1: 'Diplômée de la Faculté de Chirurgie Dentaire de Reims, elle exerce une activité omnipratique avec une orientation particulière vers les restaurations adhésives et les réhabilitations globales à visée esthétique.',
+    lastName: 'Charron',
+    bio1: 'Diplômée de la faculté de Reims et titulaire d’un CES de parodontologie, elle exerce une activité omnipratique avec une orientation particulière vers les restaurations adhésives et les réhabilitations globales à visée esthétique.',
     bio2: 'Son approche vise à restaurer durablement la fonction et l’harmonie du sourire, en tenant compte des attentes esthétiques de chaque patient.',
     bio3: 'Elle prend également en charge les pathologies parodontales, tant dans le cadre des traitements d’assainissement parodontal que par la réalisation d’actes de chirurgie mucogingivale. Cette double approche lui permet de proposer des plans de traitement complets, alliant santé parodontale et exigence esthétique.',
     image: '/MelanieImage.png',
@@ -149,35 +149,39 @@ export const values = [
 export const testimonials = [
   {
     quote:
-      "La meilleure expérience dentaire que j'aie jamais eue. L'équipe est incroyablement professionnelle et attentionne. Mon sourire n'a jamais été aussi beau !",
-    name: 'Amina K.',
-    location: 'Paris, France',
+      'La meilleure expérience dentaire que j’aie jamais eue. L’équipe est incroyablement professionnelle et attentionnée. Mon sourire n’a jamais été aussi beau !',
+    name: 'Claire D.',
   },
   {
     quote:
-      'Les docteurs Echetouani sont de vrais artistes. Ils ont transformé mon sourire avec des implants dentaires, et je ne pourrais pas être plus heureux du résultat.',
-    name: 'Youssef B.',
-    location: 'Lyon, France',
+      'Le Dr Ahmed Echetouani est un vrai expert. Il a transformé mon sourire avec des implants dentaires, et le résultat est au-delà de mes attentes.',
+    name: 'Julien M.',
   },
   {
     quote:
-      'Un cabinet magnifique et propre. Le personnel m`a mis à l`aise dès mon arrivée. Fortement recommandé !',
+      'Mélanie Charron est exceptionnelle ! Douce, à l’écoute et très professionnelle. Elle m’a vraiment rassurée tout au long du soin.',
+    name: 'Sophie L.',
+  },
+  {
+    quote:
+      'Un cabinet moderne et impeccable. Mélanie Charron a pris le temps de tout m’expliquer, je me suis senti en totale confiance.',
+    name: 'Thomas R.',
+  },
+  {
+    quote:
+      'Mes enfants adorent venir ici. Le Dr Ahmed est fantastique avec eux, et toute l’équipe est bienveillante.',
+    name: 'Nicolas P.',
+  },
+  {
+    quote:
+      'Une prise en charge parfaite du début à la fin. Le Dr Marouane Echetouani a été très professionnel, à l’écoute et rassurant.',
     name: 'Fatima Z.',
-    location: 'Marseille, France',
-  },
-  {
-    quote:
-      'Mes enfants ont hâte de leurs rendez-vous chez le dentiste ici. Le Dr. Ahmed est fantastique avec les enfants !',
-    name: 'David L.',
-    location: 'Paris, France',
   },
 ];
 
 export const cases = [
   {
     title: 'Réhabilitation Esthétique',
-    description:
-      'Relooking complet du sourire à l`aide de facettes en porcelaine sur mesure pour corriger la décoloration et le mauvais alignement.',
     beforeImage: '/ReAvant.png',
     afterImage: '/ReApres.png',
     beforeImageHint: 'yellow teeth',
@@ -185,8 +189,6 @@ export const cases = [
   },
   {
     title: 'Chirurgie Muccogingivale',
-    description:
-      'Six mois de traitement orthodontique pour redresser les dents et améliorer la fonction de morsure.',
     beforeImage: '/CmAvant.png',
     afterImage: '/CmApres.png',
     beforeImageHint: 'crooked teeth',
@@ -194,8 +196,6 @@ export const cases = [
   },
   {
     title: 'Implant',
-    description:
-      'Restauration d`une arcade complète avec des implants dentaires, offrant une solution stable et esthétique.',
     beforeImage: '/ImAvant.png',
     afterImage: '/ImApres.png',
     beforeImageHint: 'missing teeth',
@@ -203,8 +203,6 @@ export const cases = [
   },
   {
     title: 'Blanchiment des Dents',
-    description:
-      'Traitement de blanchiment des dents professionnel en cabinet pour un sourire considérablement plus éclatant.',
     beforeImage: '/blanchimentAvant.png',
     afterImage: '/blanchimentApres.png',
     beforeImageHint: 'stained teeth',

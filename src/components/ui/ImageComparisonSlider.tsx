@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useState, useRef, type MouseEvent, type TouchEvent } from 'react';
 import Image from 'next/image';
@@ -11,7 +11,12 @@ interface ImageComparisonSliderProps {
   afterImageHint?: string;
 }
 
-export function ImageComparisonSlider({ beforeImage, afterImage, beforeImageHint, afterImageHint }: ImageComparisonSliderProps) {
+export function ImageComparisonSlider({
+  beforeImage,
+  afterImage,
+  beforeImageHint,
+  afterImageHint,
+}: ImageComparisonSliderProps) {
   const [sliderPosition, setSliderPosition] = useState(50);
   const imageContainerRef = useRef<HTMLDivElement>(null);
 
@@ -33,12 +38,11 @@ export function ImageComparisonSlider({ beforeImage, afterImage, beforeImageHint
   };
 
   return (
-    <div className="w-full aspect-video select-none relative" ref={imageContainerRef}>
-      <div 
-        className="absolute inset-0"
-        onMouseMove={handleMouseMove}
-        onTouchMove={handleTouchMove}
-      >
+    <div
+      className="w-full aspect-video select-none relative rounded-lg overflow-hidden"
+      ref={imageContainerRef}
+    >
+      <div className="absolute inset-0" onMouseMove={handleMouseMove} onTouchMove={handleTouchMove}>
         <Image
           src={beforeImage}
           alt="Avant traitement"
@@ -66,8 +70,15 @@ export function ImageComparisonSlider({ beforeImage, afterImage, beforeImageHint
             <ChevronsLeftRight className="h-6 w-6 text-primary" />
           </div>
         </div>
-        <div className="absolute bottom-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded">AVANT</div>
-        <div className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded" style={{ opacity: sliderPosition > 50 ? 1: 0, transition: 'opacity 0.2s'}}>APRÈS</div>
+        <div className="absolute bottom-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
+          AVANT
+        </div>
+        <div
+          className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded"
+          style={{ opacity: sliderPosition > 50 ? 1 : 0, transition: 'opacity 0.2s' }}
+        >
+          APRÈS
+        </div>
       </div>
     </div>
   );

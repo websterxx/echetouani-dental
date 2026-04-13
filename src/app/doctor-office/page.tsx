@@ -23,7 +23,9 @@ export default function DoctorOfficePage() {
     <div className="bg-background">
       <header className="bg-secondary py-16">
         <div className="container text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline">Nos Docteurs & Cabinet</h1>
+          <h1 className="text-54xl md:text-6xl font-bold font-nickainley">
+            Nos Docteurs & Cabinet
+          </h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             Une équipe de professionnels dévoués dans une installation de pointe, engagée pour votre
             confort et vos soins.

@@ -1,5 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Mail, Phone, Clock, MapPin, Info, FileText, Train, Car, Footprints } from 'lucide-react';
+import {
+  Mail,
+  Phone,
+  Clock,
+  Accessibility,
+  Info,
+  FileText,
+  Train,
+  Car,
+  Footprints,
+} from 'lucide-react';
 import { AppointmentButton } from '../layout/AppointmentButton';
 
 export function ContactMap() {
@@ -7,7 +17,9 @@ export function ContactMap() {
     <section id="contact" className="py-16 sm:py-24">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Accès & Informations du Cabinet</h2>
+          <h2 className="text-4xl md:text-5xl font-nickainley font-bold">
+            Accès & Informations du Cabinet
+          </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             Retrouvez toutes les informations utiles pour organiser votre visite : adresse, accès,
             horaires et plan d’accès au cabinet.
@@ -57,6 +69,16 @@ export function ContactMap() {
                       </p>
                     </div>
                   </div>
+
+                  <div className="flex items-start gap-4">
+                    <Accessibility className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold">Accès PMR</h4>
+                      <p className="text-muted-foreground text-sm">
+                        Le cabinet se situe au fond de la cour.
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
                 <p className="text-muted-foreground">
@@ -73,7 +95,7 @@ export function ContactMap() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.524883981297!2d3.72700781567437!3d48.51499737930682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47eecf9913c2259f%3A0x68fadc13095e0f11!2s49%20Bis%20Rue%20Carnot%2C%2010100%20Romilly-sur-Seine%2C%20France!5e0!3m2!1sen!2sus!4v1708865830000!5m2!1sen!2sus"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Carte du Cabinet Dentaire Echetouani Charon sur google maps"
+              title="Carte du Cabinet Dentaire Echetouani Charron sur google maps"
             ></iframe>
           </div>
         </div>
@@ -88,8 +110,7 @@ export function ContactMap() {
                   <Phone className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Téléphone</h4>
-                    <p className="text-muted-foreground">+33 1 23 45 67 89</p>
-                    <p className="text-muted-foreground">+33 9 87 65 43 21</p>
+                    <p className="text-muted-foreground">03 68 89 06 70</p>
                   </div>
                 </div>
 
@@ -97,8 +118,7 @@ export function ContactMap() {
                   <Mail className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <p className="text-muted-foreground">contact@echetouani-dental.com</p>
-                    <p className="text-muted-foreground">secretariat@echetouani-dental.com</p>
+                    <p className="text-muted-foreground">cabinetdentaireromilly@gmail.com</p>
                   </div>
                 </div>
 
@@ -106,7 +126,7 @@ export function ContactMap() {
                   <Clock className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Horaires d'Ouverture</h4>
-                    <p className="text-muted-foreground">Lun - Ven : 9h - 18h</p>
+                    <p className="text-muted-foreground">Lun - Ven : 9h - 19h</p>
                   </div>
                 </div>
 
@@ -115,10 +135,8 @@ export function ContactMap() {
                   <div>
                     <h4 className="font-semibold">Paiement et Prise en Charge</h4>
                     <p className="text-muted-foreground text-sm">
-                      Prise en charge par la Sécurité Sociale et mutuelles.
-                    </p>
-                    <p className="text-muted-foreground text-sm">
-                      Tiers payant, CMU, ACS acceptés.
+                      Les dentistes sont conventionnés secteur 1, avec des soins remboursés par la
+                      Sécurité sociale et les mutuelles.
                     </p>
                   </div>
                 </div>

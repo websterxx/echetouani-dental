@@ -5,9 +5,12 @@ export function OurValues() {
     <section id="values" className="py-16 sm:py-24">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Notre Engagement Envers Vous</h2>
+          <h2 className="text-4xl md:text-5xl font-nickainley font-bold">
+            Notre Engagement Envers Vous
+          </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Nous nous engageons à offrir une expérience dentaire exceptionnelle fondée sur la confiance et la qualité.
+            Nous nous engageons à offrir une expérience dentaire exceptionnelle fondée sur la
+            confiance et la qualité.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">

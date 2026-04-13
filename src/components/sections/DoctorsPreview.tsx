@@ -8,9 +8,12 @@ export function DoctorsPreview() {
     <section id="doctors" className="py-16 sm:py-24">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Rencontrez Nos Dentistes</h2>
+          <h2 className="text-4xl md:text-5xl font-nickainley font-bold">
+            Rencontrez Nos Dentistes
+          </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Nos dentistes expérimentés et compatissants s'engagent à vous fournir des soins de la plus haute qualité.
+            Nos dentistes expérimentés et compatissants s'engagent à vous fournir des soins de la
+            plus haute qualité.
           </p>
         </div>
 
@@ -32,15 +35,10 @@ export function DoctorsPreview() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
 
               <div className="absolute bottom-0 left-0 p-6 text-white">
-                <h3 className="text-2xl font-bold">
-                  DR. {doctor.lastName.toUpperCase()}
-                </h3>
+                <h3 className="text-2xl font-bold">DR. {doctor.lastName.toUpperCase()}</h3>
                 <p className="text-xl mb-4">{doctor.firstName}</p>
 
-                <Button
-                  variant="secondary"
-                  className="font-semibold"
-                >
+                <Button variant="secondary" className="font-semibold">
                   En savoir plus
                 </Button>
               </div>

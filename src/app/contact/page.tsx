@@ -79,7 +79,7 @@ export default function ContactPage() {
     <div className="bg-background">
       <header className="bg-secondary py-16">
         <div className="container text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline">Contactez-nous</h1>
+          <h1 className="text-5xl md:text-6xl font-bold font-nickainley">Contactez-nous</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             Une question ? Une urgence ? Remplissez le formulaire ou retrouvez nos coordonnées
             ci-dessous.
@@ -127,14 +127,14 @@ export default function ContactPage() {
                       <Mail className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold">Email</h4>
-                        <p className="text-muted-foreground">Cabinetdentaireromilly@gmail.com</p>
+                        <p className="text-muted-foreground">cabinetdentaireromilly@gmail.com</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
                       <Clock className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold">Horaires d'Ouverture</h4>
-                        <p className="text-muted-foreground">Lun - Ven : 9h - 18h</p>
+                        <p className="text-muted-foreground">Lun - Ven : 9h - 19h</p>
                       </div>
                     </div>
                   </div>

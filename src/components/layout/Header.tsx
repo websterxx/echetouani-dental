@@ -61,20 +61,22 @@ export function Header() {
       <div className="container flex h-24 items-center justify-between pl-5">
         <Link href="/" className="flex items-center gap-3">
           <img
-            src="/logSansBackGround.png"
+            src="/LogoSansText.png"
             alt="Logo Cabinet Dentaire Echetouani"
             className="w-20 h-20 object-contain"
           />
-          <span className="text-xl font-pacifico text-primary">Cabinet Echetouani Charon</span>
+          <span className="text-lg sm:text-3xl font-nickainley text-primary">
+            Cabinet Echetouani Charron
+          </span>
         </Link>
 
-        <nav className="hidden items-center gap-6 xl:flex">
+        <nav className="hidden items-center gap-6 xl:flex pt-2">
           {navLinks.map((link) => (
             <NavLink key={link.href} href={link.href} label={link.label} />
           ))}
         </nav>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 pt-2">
           <AppointmentButton className="hidden xl:flex font-semibold" />
 
           <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
@@ -89,13 +91,15 @@ export function Header() {
               <SheetHeader className="border-b pb-4">
                 <SheetTitle>Menu</SheetTitle>
                 <SheetDescription>
-                  Naviguez sur le site du Cabinet Dentaire Echetouani.
+                  Naviguez sur le site du Cabinet Dentaire Echetouani Charron.
                 </SheetDescription>
               </SheetHeader>
 
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center" onClick={() => setMenuOpen(false)}>
-                  <span className="font-bold text-black">Cabinet Echetouani Charon</span>
+                  <span className="font-bold font-nickainley text-3xl text-black">
+                    Cabinet Echetouani Charron
+                  </span>
                 </Link>
 
                 <nav className="flex flex-col gap-4">
