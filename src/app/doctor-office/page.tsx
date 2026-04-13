@@ -2,11 +2,13 @@ import Image from 'next/image';
 import { doctors } from '@/lib/data';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card } from '@/components/ui/card';
+import Script from 'next/script';
 
 export const metadata = {
-  title: 'Nos Docteurs & Cabinet | Cabinet Dentaire Echetouani',
+  title: 'Nos Dentistes à Romilly-sur-Seine | Cabinet Dentaire Echetouani Charron',
+
   description:
-    'Rencontrez nos dentistes experts, Dr. Marouane et Dr. Ahmed Echetouani, et visitez notre cabinet dentaire moderne et accueillant.',
+    'Découvrez les Dr Marouane Echetouani, Dr Ahmed Echetouani et Dr Mélanie Charron, chirurgiens-dentistes à Romilly-sur-Seine. Cabinet moderne, soins dentaires complets et prise de rendez-vous sur Doctolib.',
 };
 
 const officeImages = [
@@ -18,14 +20,96 @@ const officeImages = [
   { src: '/Cabinet6.png', alt: 'Salle de préparation' },
 ];
 
+const officeSchema = {
+  '@context': 'https://schema.org',
+  '@type': ['Dentist', 'MedicalClinic'],
+
+  '@id': 'https://cabinetdentaireromilly.com/#clinic',
+
+  name: 'Cabinet Dentaire Echetouani Charron',
+  url: 'https://cabinetdentaireromilly.com',
+  image: 'https://cabinetdentaireromilly.com/og-image.jpg',
+
+  telephone: '03 68 89 06 70',
+  email: 'cabinetdentaireromilly@gmail.com',
+
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '49 Bis Rue Carnot',
+    postalCode: '10100',
+    addressLocality: 'Romilly-sur-Seine',
+    addressCountry: 'FR',
+  },
+
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 48.515,
+    longitude: 3.727,
+  },
+
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '19:00',
+    },
+  ],
+
+  medicalSpecialty: 'Dentistry',
+
+  priceRange: '€€',
+
+  areaServed: [
+    {
+      '@type': 'City',
+      name: 'Romilly-sur-Seine',
+    },
+    {
+      '@type': 'AdministrativeArea',
+      name: 'Aube',
+    },
+  ],
+
+  sameAs: ['https://cabinetdentaireromilly.com'],
+
+  employee: [
+    {
+      '@type': 'Physician',
+      name: 'Dr. Marouane Echetouani',
+      jobTitle: 'Chirurgien-dentiste',
+      sameAs: 'https://www.doctolib.fr/dentiste/chateau-thierry/marouane-echetouani',
+      worksFor: {
+        '@id': 'https://cabinetdentaireromilly.com/#clinic',
+      },
+    },
+    {
+      '@type': 'Physician',
+      name: 'Dr. Ahmed Echetouani',
+      jobTitle: 'Chirurgien-dentiste',
+      sameAs: 'https://www.doctolib.fr/dentiste/chateau-thierry/ahmed-echetouani',
+      worksFor: {
+        '@id': 'https://cabinetdentaireromilly.com/#clinic',
+      },
+    },
+    {
+      '@type': 'Physician',
+      name: 'Dr. Mélanie Charron',
+      jobTitle: 'Chirurgien-dentiste',
+      sameAs: 'https://www.doctolib.fr/dentiste/vincennes/melanie-charron',
+      worksFor: {
+        '@id': 'https://cabinetdentaireromilly.com/#clinic',
+      },
+    },
+  ],
+};
+
 export default function DoctorOfficePage() {
   return (
     <div className="bg-background">
       <header className="bg-secondary py-16">
         <div className="container text-center">
-          <h1 className="text-54xl md:text-6xl font-bold font-nickainley">
-            Nos Docteurs & Cabinet
-          </h1>
+          <h1 className="text-5xl md:text-6xl font-bold font-nickainley">Nos Docteurs & Cabinet</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             Une équipe de professionnels dévoués dans une installation de pointe, engagée pour votre
             confort et vos soins.
@@ -43,7 +127,6 @@ export default function DoctorOfficePage() {
                     src={doctor.image}
                     alt={`Dr. ${doctor.firstName} ${doctor.lastName}`}
                     className="object-cover"
-                    data-ai-hint={doctor.dataAiHint}
                   />
                   <AvatarFallback>{doctor.firstName.charAt(0)}</AvatarFallback>
                 </Avatar>
@@ -100,6 +183,14 @@ export default function DoctorOfficePage() {
           </div>
         </div>
       </section>
+
+      <Script
+        id="office-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(officeSchema),
+        }}
+      />
     </div>
   );
 }

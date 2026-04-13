@@ -95,7 +95,7 @@ export function ContactMap() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.524883981297!2d3.72700781567437!3d48.51499737930682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47eecf9913c2259f%3A0x68fadc13095e0f11!2s49%20Bis%20Rue%20Carnot%2C%2010100%20Romilly-sur-Seine%2C%20France!5e0!3m2!1sen!2sus!4v1708865830000!5m2!1sen!2sus"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Carte du Cabinet Dentaire Echetouani Charron sur google maps"
+              title="Localisation du cabinet dentaire à Romilly-sur-Seine"
             ></iframe>
           </div>
         </div>
@@ -116,9 +116,11 @@ export function ContactMap() {
 
                 <div className="flex items-start gap-4">
                   <Mail className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                  <div>
+                  <div className="min-w-0">
                     <h4 className="font-semibold">Email</h4>
-                    <p className="text-muted-foreground">cabinetdentaireromilly@gmail.com</p>
+                    <p className="text-muted-foreground break-all">
+                      cabinetdentaireromilly@gmail.com
+                    </p>
                   </div>
                 </div>
 

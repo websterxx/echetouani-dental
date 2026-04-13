@@ -3,6 +3,7 @@
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import { Mail, Phone, Clock, MapPin } from 'lucide-react';
+import Script from 'next/script';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -44,6 +45,54 @@ const defaultValues: ContactFormValues = {
 };
 
 const reasons = ['Prise de rendez-vous', 'Question sur un traitement', 'Urgence dentaire', 'Autre'];
+
+const contactSchema = {
+  '@context': 'https://schema.org',
+  '@type': ['Dentist', 'LocalBusiness'],
+
+  '@id': 'https://cabinetdentaireromilly.com/#dentist',
+
+  name: 'Cabinet Dentaire Echetouani Charron',
+  url: 'https://cabinetdentaireromilly.com',
+  telephone: '03 68 89 06 70',
+  email: 'cabinetdentaireromilly@gmail.com',
+
+  image: 'https://cabinetdentaireromilly.com/og-image.jpg',
+
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '49 Bis Rue Carnot',
+    postalCode: '10100',
+    addressLocality: 'Romilly-sur-Seine',
+    addressCountry: 'FR',
+  },
+
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 48.515,
+    longitude: 3.727,
+  },
+
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '19:00',
+    },
+  ],
+
+  areaServed: {
+    '@type': 'AdministrativeArea',
+    name: 'Aube',
+  },
+
+  priceRange: '€€',
+
+  medicalSpecialty: 'Dentistry',
+
+  sameAs: ['https://cabinetdentaireromilly.com'],
+};
 
 export default function ContactPage() {
   const [formData, setFormData] = useState<ContactFormValues | null>(null);
@@ -298,6 +347,13 @@ export default function ContactPage() {
           </div>
         </div>
       </main>
+
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(contactSchema),
+        }}
+      />
     </div>
   );
 }

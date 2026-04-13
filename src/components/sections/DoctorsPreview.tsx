@@ -23,13 +23,13 @@ export function DoctorsPreview() {
               key={index}
               href="/doctor-office"
               className="group relative block rounded-lg overflow-hidden aspect-[4/5] transition-transform hover:scale-105 shadow-2xl"
+              aria-label={`Voir le profil de Dr ${doctor.firstName} ${doctor.lastName}`}
             >
               <Image
                 src={doctor.image}
                 alt={`${doctor.firstName} ${doctor.lastName}`}
                 fill
                 className="object-cover w-full h-full"
-                data-ai-hint={doctor.dataAiHint}
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
