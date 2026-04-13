@@ -176,7 +176,11 @@ export default function ContactPage() {
                       <Mail className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold">Email</h4>
-                        <p className="text-muted-foreground">cabinetdentaireromilly@gmail.com</p>
+                        <div className="min-w-0">
+                          <p className="text-muted-foreground break-words">
+                            cabinetdentaireromilly@gmail.com
+                          </p>
+                        </div>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
