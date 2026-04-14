@@ -2,7 +2,7 @@
 
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
-import { Mail, Phone, Clock, MapPin } from 'lucide-react';
+import { Mail, Phone, Clock, MapPin, Loader2 } from 'lucide-react';
 import Script from 'next/script';
 
 import { Button } from '@/components/ui/button';
@@ -96,6 +96,7 @@ const contactSchema = {
 
 export default function ContactPage() {
   const [formData, setFormData] = useState<ContactFormValues | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<ContactFormValues>({
     defaultValues,
@@ -106,6 +107,7 @@ export default function ContactPage() {
   const { handleSubmit, reset, control } = form;
 
   async function onSubmit(data: ContactFormValues) {
+    setIsSubmitting(true);
     try {
       await sendContactEmail(data);
       toast({
@@ -121,6 +123,8 @@ export default function ContactPage() {
         description:
           "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer.",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   }
 
@@ -341,8 +345,15 @@ export default function ContactPage() {
                       )}
                     />
                   </div>
-                  <Button type="submit" size="lg" className="w-full mt-8">
-                    Envoyer le message
+                  <Button type="submit" size="lg" className="w-full mt-8" disabled={isSubmitting}>
+                    {isSubmitting ? (
+                      <span className="flex items-center justify-center gap-2">
+                        <Loader2 className="h-4 w-4 animate-spin" />
+                        Envoi en cours...
+                      </span>
+                    ) : (
+                      'Envoyer le message'
+                    )}
                   </Button>
                 </form>
               </Form>
